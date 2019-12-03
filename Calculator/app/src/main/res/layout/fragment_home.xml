@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorfondo"
+    android:textAlignment="center"
+    android:textColor="#606060">
+
+
+    <Button
+        android:id="@+id/buttonPorcentaje"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="%"
+        android:textColor="#595d66"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="0"
+        android:textColor="#595d66"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPorcentaje" />
+
+    <Button
+        android:id="@+id/buttonPunto"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="."
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button0" />
+
+    <Button
+        android:id="@+id/buttonBorrar"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="⌫"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPunto" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="1"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPorcentaje"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="2"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button0"
+        app:layout_constraintStart_toEndOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="3"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPunto"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/buttonIgual"
+        android:layout_width="103dp"
+        android:layout_height="120dp"
+        android:background="@drawable/styleboton"
+        android:backgroundTint="#fc6e51"
+        android:fontFamily="Roboto"
+        android:text="="
+        android:textSize="25sp"
+        android:textColor="@color/colorwhile"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBorrar"
+        app:layout_constraintStart_toEndOf="@+id/button3"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="4"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="5"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="6"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="7"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="8"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="9"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/buttonAC"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="AC"
+        android:textSize="25sp"
+        android:textColor="@color/colorbotonigual"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIgual"
+        app:layout_constraintStart_toEndOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/buttonSuma"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="+"
+        android:textColor="#595d66"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResta"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="-"
+        android:textSize="25sp"
+        android:textColor="#595d66"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/buttonSuma" />
+
+    <Button
+        android:id="@+id/buttonMultiplicacion"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="×"
+        android:textColor="#595d66"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintStart_toEndOf="@+id/buttonResta"/>
+
+    <Button
+        android:id="@+id/buttonDivision"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/styleboton"
+        android:fontFamily="Roboto"
+        android:text="÷"
+        android:textColor="#595d66"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonMultiplicacion"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="405dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="116dp"
+        android:longClickable="false"
+        android:maxLength="10"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMultiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="297dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:maxLength="10"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
