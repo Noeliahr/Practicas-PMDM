@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorFondo">#2C3848</color>
+    <color name="white">#ffffff</color>
+    <color name="puntuacion">#fcd307</color>
+    <color name="fondobuscar">#5ca0d3</color>
+    <color name="estrellas">#2C3848</color>
+    <color name="busquedad">#8dbde0</color>
+    <color name="descripcion">#646d79</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PracticaPMDM_Movies</string>
+    <string name="title_home">Peliculas</string>
+    <string name="title_dashboard">Series</string>
+    <string name="title_notifications">Favoritos</string>
+    <string name="lista_peli1">RECOMENDADAS PARA TI</string>
+    <string name="lista_peli2">LAS MAS VALORADAS</string>
+    <string name="buscar">¿QUE PELICULA QUIERES BUSCAR?</string>
+    <string name="boton">VER</string>
+    <string name="studio">Studio</string>
+    <string name="genre">Genre</string>
+    <string name="release">Release</string>
+    <string name="Favoritos">FAVORITOS</string>
+</resources>
