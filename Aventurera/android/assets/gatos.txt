@@ -1,0 +1,26 @@
+gatos.png
+size: 879, 440
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Run (1)
+  rotate: false
+  xy: 1, 1
+  size: 292, 438
+  orig: 542, 474
+  offset: 133, 11
+  index: -1
+Run (2)
+  rotate: false
+  xy: 295, 1
+  size: 293, 425
+  orig: 542, 474
+  offset: 140, 20
+  index: -1
+Run (3)
+  rotate: false
+  xy: 590, 1
+  size: 288, 398
+  orig: 542, 474
+  offset: 153, 43
+  index: -1

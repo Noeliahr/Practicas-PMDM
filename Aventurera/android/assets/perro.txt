@@ -1,0 +1,26 @@
+perro.png
+size: 887, 454
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Jump (1)
+  rotate: false
+  xy: 1, 1
+  size: 294, 452
+  orig: 547, 481
+  offset: 137, 13
+  index: -1
+Jump (2)
+  rotate: false
+  xy: 297, 1
+  size: 294, 450
+  orig: 547, 481
+  offset: 101, 23
+  index: -1
+Jump (3)
+  rotate: false
+  xy: 593, 1
+  size: 293, 418
+  orig: 547, 481
+  offset: 65, 53
+  index: -1

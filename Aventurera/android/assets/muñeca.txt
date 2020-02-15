@@ -1,0 +1,40 @@
+muñeca.png
+size: 1593, 442
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Idle (16)
+  rotate: false
+  xy: 652, 1
+  size: 289, 439
+  orig: 416, 454
+  offset: 75, 1
+  index: -1
+Jump (8)
+  rotate: false
+  xy: 943, 1
+  size: 333, 438
+  orig: 416, 454
+  offset: 29, 14
+  index: -1
+Walk (17)
+  rotate: false
+  xy: 1278, 1
+  size: 314, 438
+  orig: 416, 454
+  offset: 42, 9
+  index: -1
+Walk (18)
+  rotate: false
+  xy: 330, 1
+  size: 320, 440
+  orig: 416, 454
+  offset: 41, 5
+  index: -1
+Walk (19)
+  rotate: false
+  xy: 1, 1
+  size: 327, 440
+  orig: 416, 454
+  offset: 40, 3
+  index: -1
