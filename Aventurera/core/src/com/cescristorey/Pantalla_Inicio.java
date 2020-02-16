@@ -55,7 +55,7 @@ public class Pantalla_Inicio implements Screen{
         game.batch.setProjectionMatrix(camera.combined);
 
         game.batch.begin();
-        game.font.draw(game.batch, "Bienvenido", 50, 150);
+        game.font.draw(game.batch, "JUEGA DE AVENTURERA", 50, 150);
         game.font.draw(game.batch, "Toca para jugar", 50, 100);
         game.batch.end();
 

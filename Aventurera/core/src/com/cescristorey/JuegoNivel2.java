@@ -14,7 +14,10 @@ import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -56,7 +59,7 @@ public class JuegoNivel2 implements Screen{
         
         tortuga= new Tortuga();
         tortuga.layer= (TiledMapTileLayer) map.getLayers().get("plataforma");
-        tortuga.setPosition(47, 10);
+        tortuga.setPosition(47, 4);
         stage.addActor(tortuga);
         
         gato = new Gato();
@@ -71,15 +74,7 @@ public class JuegoNivel2 implements Screen{
         
         monedas= new ArrayList<>();
         this.loadMoneda(0,0);
-        
-        
-        
-//        estrellitas= new ArrayList<>();
-//        this.loadEstrellas(0, 0);
-//        estrella= new Estrella();
-//        estrella.layer=(TiledMapTileLayer) map.getLayers().get("plataformas");
-//        estrella.setPosition(3, 13);
-//        stage.addActor(estrella);
+
         
     }
 
@@ -96,7 +91,12 @@ public class JuegoNivel2 implements Screen{
             muneca.setPosition(0, muneca.getY());
         }
         if (muneca.getX()>197){
-            muneca.setPosition(196, muneca.getY());
+            try {
+                game.setScreen(new Pantalla_Inicio(game));
+            } catch (IOException ex) {
+                Logger.getLogger(JuegoNivel2.class.getName()).log(Level.SEVERE, null, ex);
+            }
+           dispose();
         }
         if (muneca.getY()<0){
             game.setScreen(new HasPerdido(game));
@@ -125,7 +125,7 @@ public class JuegoNivel2 implements Screen{
         stage.draw();
 
         this.overlapsMonedas();
-        this.overlapsTortuga();
+//        this.overlapsTortuga();
         this.overlapsGato();
         this.overlapsPerro();
         this.overlapsCajasMonedas();

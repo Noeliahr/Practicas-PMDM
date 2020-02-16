@@ -50,35 +50,66 @@ public class Tortuga extends Image{
     public void act(float delta) {
         time = time + delta;
         
-        yVelocity = yVelocity + MAX_VELOCITY;
-        xVelocity = MAX_VELOCITY;
+        if (this.empezarMoverse==true){
+            yVelocity = yVelocity + MAX_VELOCITY;
+            xVelocity = MAX_VELOCITY;
 
-        yVelocity = yVelocity + GRAVITY;
+            yVelocity = yVelocity + GRAVITY;
 
-        float x = this.getX();
-        float y = this.getY();
-        float xChange = xVelocity * delta;
-        float yChange = yVelocity * delta;
-        
-        if (canMoveTo(x + xChange, y, false) == false) {
-            xVelocity = xChange = 0;
+            float x = this.getX();
+            float y = this.getY();
+            float xChange = xVelocity * delta;
+            float yChange = yVelocity * delta;
+
+            if (canMoveTo(x + xChange, y, false) == false) {
+                xVelocity = xChange = 0;
+            }
+
+            if (canMoveTo(x, y + yChange, yVelocity > 0) == false) {
+                canJump = yVelocity < 0;
+                yVelocity = yChange = 0;
+            }
+
+
+            if(isFacingRight==true){
+                   xChange = xVelocity * delta;
+                   this.setPosition(x + xChange, y); 
+            }else{
+
+                xChange = -1*xVelocity * delta;
+                this.setPosition(x +xChange, y);
+
+            }
         }
-
-        if (canMoveTo(x, y + yChange, yVelocity > 0) == false) {
-            canJump = yVelocity < 0;
-            yVelocity = yChange = 0;
-        }
-        
-        
-        if(isFacingRight==true){
-               xChange = xVelocity * delta;
-               this.setPosition(x + xChange, y + yChange); 
-        }else{
-
-            xChange = -1*xVelocity * delta;
-            this.setPosition(x +xChange, y + yChange);
-            
-        }
+//        yVelocity = yVelocity + MAX_VELOCITY;
+//        xVelocity = MAX_VELOCITY;
+//
+//        yVelocity = yVelocity + GRAVITY;
+//
+//        float x = this.getX();
+//        float y = this.getY();
+//        float xChange = xVelocity * delta;
+//        float yChange = yVelocity * delta;
+//        
+//        if (canMoveTo(x + xChange, y, false) == false) {
+//            xVelocity = xChange = 0;
+//        }
+//
+//        if (canMoveTo(x, y + yChange, yVelocity > 0) == false) {
+//            canJump = yVelocity < 0;
+//            yVelocity = yChange = 0;
+//        }
+//        
+//        
+//        if(isFacingRight==true){
+//               xChange = xVelocity * delta;
+//               this.setPosition(x + xChange, y + yChange); 
+//        }else{
+//
+//            xChange = -1*xVelocity * delta;
+//            this.setPosition(x +xChange, y + yChange);
+//            
+//        }
 
 
     
